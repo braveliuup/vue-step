@@ -1,0 +1,25 @@
+<html>
+<head>
+	<script src="vue.js"></script>
+</head>
+<body>
+	<div id="app-5">
+		<p>{{message}}</p>
+		<button v-on:click='alertMsg'>alert msg</button>
+	</div>
+
+<script>
+	var app4 = new Vue({
+		el: '#app-5',
+		data: {
+			message: 'this is a msg'
+		},
+		methods: {
+			alertMsg : function(){
+				alert(this.message);
+			}
+		}
+	})
+</script>
+</body>
+</html>
